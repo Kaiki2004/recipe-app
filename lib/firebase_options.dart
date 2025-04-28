@@ -36,11 +36,11 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'api_key_aqui', // ainda falta configurar o iOS no Firebase!
+    apiKey: 'api_key_aqui', // Ainda falta configurar o iOS no Firebase!
     appId: 'app_id_aqui',
     messagingSenderId: '533238709437',
     projectId: 'app-culinaria',
     storageBucket: 'app-culinaria.appspot.com',
-    iosBundleId: 'com.example.recipe', // supondo que seja esse
+    iosBundleId: 'com.example.recipe', // Supondo que seja esse
   );
 }

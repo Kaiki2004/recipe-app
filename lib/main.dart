@@ -8,7 +8,7 @@ import 'login_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  usePathUrlStrategy(); // 🔥 Necessário para corrigir navegação e inicializar Firebase corretamente no Web
+  usePathUrlStrategy(); // Necessário para corrigir navegação na Web
 
   await Firebase.initializeApp(
     options: kIsWeb

@@ -1,75 +1,94 @@
+# Recipe App
 
-# 📖 Recipe App
+## Descrição
 
-Aplicativo de receitas desenvolvido em **Flutter** com suporte a **Web** e **Mobile (Android/iOS)**, utilizando **Firebase Authentication** para login e registro de usuários.
+O **Recipe App** é um aplicativo Flutter desenvolvido para gerenciar receitas e permitir que os usuários se cadastrem, façam login e visualizem receitas diretamente da API Spoonacular. Este projeto usa **Firebase Authentication** para gerenciar o login e cadastro dos usuários, além de integrar a busca por receitas da API.
 
----
-
-## ✨ Funcionalidades
-- Registro e login de usuários com autenticação Firebase.
-- Visualização de receitas salvas.
-- Suporte para plataforma Web, Android e iOS.
-- Design simples e amigável.
-- Salvamento de imagens e receitas.
+![imagem do login](assets/foto_capa.png)
 
 ---
+![gif do projeto](assets/video2.gif)
 
-## 🛠️ Tecnologias Utilizadas
-- [Flutter](https://flutter.dev/) 3.x
-- [Dart](https://dart.dev/)
-- [Firebase Authentication](https://firebase.google.com/)
-- [Firebase Core](https://firebase.google.com/)
-- Plataforma Android, iOS e Web.
 
----
+## Funcionalidades
 
-## 🚀 Como executar o projeto
+- **Autenticação de usuários** com Firebase (Cadastro/Login).
+- **Busca de receitas** através da API Spoonacular.
+- Exibição de receitas com **imagem, título e resumo**.
+- **Interface intuitiva** com navegação fácil entre as telas.
 
-1. **Clone o repositório**
+## Tecnologias Utilizadas
+
+- **Flutter**: Framework para desenvolvimento de aplicações móveis e web.
+- **Firebase Authentication**: Sistema de autenticação para registro e login de usuários.
+- **Spoonacular API**: API para buscar receitas e informações de ingredientes.
+- **Google Fonts**: Biblioteca para fontes personalizadas na interface.
+
+## Como Rodar o Projeto
+
+1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
-   ```
+   git clone https://github.com/seu_usuario/recipe-app.git
+Navegue até o diretório do projeto:
 
-2. **Instale as dependências**
-   ```bash
-   flutter pub get
-   ```
+bash
+Copiar
+cd recipe-app
+Instale as dependências:
 
-3. **Configure o Firebase**
-   - Configure os arquivos `google-services.json` (Android) e `GoogleService-Info.plist` (iOS).
-   - O projeto já inclui `firebase_options.dart` gerado.
+bash
+Copiar
+flutter pub get
+Configure o Firebase:
 
-4. **Execute o app**
-   ```bash
-   flutter run
-   ```
+Crie um projeto no Firebase Console.
 
----
+Adicione o Firebase ao seu projeto Flutter seguindo as instruções para Android e Web.
 
-## 📂 Estrutura do Projeto
+Baixe os arquivos de configuração do Firebase (google-services.json para Android e firebase_options.dart para Web) e coloque-os nas pastas corretas no seu projeto.
 
-```
-lib/
- ├── main.dart               # Ponto de entrada do app
- ├── login_page.dart          # Página de login
- ├── register_page.dart       # Página de registro
- └── recipes_page.dart        # Página de visualização de receitas
-assets/
- └── chef.png                 # Imagem usada no app
-```
+Execute o aplicativo:
 
----
+bash
+Copiar
+flutter run
+Estrutura do Projeto
+bash
+Copiar
+/lib
+    /firebase_options.dart       # Configurações do Firebase.
+    /login_page.dart             # Página de Login do Usuário.
+    /register_page.dart          # Página de Registro do Usuário.
+    /recipes_page.dart           # Página para exibição de receitas.
+    /main.dart                   # Inicialização do aplicativo.
+    
+/assets
+    /images
+        chef.png                 # Imagem do chef no login.
+        chef2.png                # Imagem do chef no cadastro.
+        
+/pubspec.yaml                  # Dependências e configurações do Flutter.
+Contribuição
+Se você quiser contribuir com o projeto, siga os seguintes passos:
 
-## 📸 Imagens
+Faça um fork deste repositório.
 
-![Imagem do App](assets/chef.png)
+Crie uma branch com suas alterações:
 
----
+bash
+Copiar
+git checkout -b minha-branch
+Faça as alterações e commit:
 
-## 🧑‍💻 Autor
-- Desenvolvido por [Seu Nome] 💻
+bash
+Copiar
+git commit -am 'Adiciona nova funcionalidade'
+Envie suas alterações para o repositório remoto:
 
----
+bash
+Copiar
+git push origin minha-branch
+Abra um pull request.
 
-> Este projeto foi desenvolvido com fins de aprendizado e demonstração de integração Flutter + Firebase.
+Licença
+Este projeto está licenciado sob a MIT License
