@@ -58,18 +58,3 @@ lib/
 assets/
  └── chef.png                 # Imagem usada no app
 ```
-
----
-
-## 📸 Imagens
-
-![Imagem do App](assets/chef.png)
-
----
-
-## 🧑‍💻 Autor
-- Desenvolvido por [Seu Nome] 💻
-
----
-
-> Este projeto foi desenvolvido com fins de aprendizado e demonstração de integração Flutter + Firebase.
